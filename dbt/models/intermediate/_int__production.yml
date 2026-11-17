@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int__production
+    description: '{{ doc("int__production") }}'
+    columns:
+      - name: stock_amount
+        description: Calculated column by list_price and quantity.
+        config: 
+           meta:
+              currency: "USD"
